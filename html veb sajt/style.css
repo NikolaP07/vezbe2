@@ -1,0 +1,176 @@
+/*ul {
+    list-style-type: none;
+    margin: 0;
+  
+    width: 100%;
+    height: 50px;
+    background-color:gray;
+  
+    position:sticky;
+  }
+  
+  li {
+    
+    display: inline;
+     color: white;
+  padding-left: 10%;
+  padding-right: 5%;
+  overflow: hidden;
+  height: 100%;
+  
+ 
+ 
+    text-decoration: none;
+  
+   
+  }
+  li:hover{
+    background-color: black;
+  }
+  
+  
+  */
+  *{
+    margin: 0;
+  }
+  ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #365486;
+
+    
+  }
+ 
+  .navbar{
+    animation-name:up;
+    animation-duration: 1s;
+  }
+
+  
+  li {
+    float: left;
+  }
+  
+  li  {
+    display: block;
+    color: #DCF2F1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  li:hover {
+    background-color: #0F1035;
+  }
+  li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  .container{
+    animation-name:Levo;
+    animation-duration: 2s;
+
+    width: 60%;
+    background:rgb(240, 237, 207) ;
+   
+
+    overflow: hidden;
+    
+
+    margin: 0 auto;
+  }
+  body{ 
+    background-color:   #7FC7D9;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .ram{
+
+    border: #111;
+    border: solid 50%;
+   
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ 
+    
+    
+    border-style: solid;
+
+    
+  }
+  p{
+   
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  br{
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1{
+    animation-name:down;
+    animation-duration: 1.5s;
+
+    font-family: 'Bungee Spice', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+  }
+  h2{
+    animation-name:Right;
+    animation-duration: 1.5s;
+
+    font-family: 'Bungee Spice', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+  }
+  h3{
+    animation-name:Right;
+    animation-duration: 1.5s;
+
+    font-family: 'Bungee Spice', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+  }
+ 
+  img:hover{
+ animation-name: grow;
+ animation-duration: 2s;
+
+  }
+
+  
+ 
+
+  @keyframes grow {
+    50%{transform:scale(1.5,1.5)}
+
+  }
+  @keyframes Levo {
+    from{transform: translateX(-100%)}
+   }
+   @keyframes Right {
+    from{transform: translateX(100%)}
+   }
+   @keyframes up {
+ from{transform: translatey(-100%)}
+   }
+   @keyframes down{
+    from{transform: translatey(100%)}
+      }
+
+
+
+
+  
+  
+  
