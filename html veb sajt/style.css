@@ -34,7 +34,10 @@
     margin: 0;
   }
   ul {
-    position:sticky;
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,9 +46,23 @@
 
     
   }
+  #sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
  
   .navbar{
     animation-name:up;
+    animation-duration: 1s;
+   
+    
+  }
+  .Lowbar{
+
+    position: fixed;
+    bottom: 0;
+    animation-name:down;
     animation-duration: 1s;
   }
 
@@ -74,8 +91,8 @@
     border-right: none;
   }
   .container{
-    animation-name:Levo;
-    animation-duration: 2s;
+
+    
 
     width: 60%;
     background:rgb(240, 237, 207) ;
@@ -118,51 +135,112 @@
     font-family: 'Open Sans', sans-serif;
   }
   h1{
-    animation-name:down;
-    animation-duration: 1.5s;
+   
 
     font-family: 'Bungee Spice', sans-serif;
 font-family: 'Open Sans', sans-serif;
 
   }
   h2{
-    animation-name:Right;
-    animation-duration: 1.5s;
+
 
     font-family: 'Bungee Spice', sans-serif;
 font-family: 'Open Sans', sans-serif;
 
   }
   h3{
-    animation-name:Right;
-    animation-duration: 1.5s;
+  
 
     font-family: 'Bungee Spice', sans-serif;
 font-family: 'Open Sans', sans-serif;
 
   }
  
-  img:hover{
+  .ram:hover{
  animation-name: grow;
  animation-duration: 2s;
 
+  }
+  #dole{
+    animation-name: up;
+    animation-duration: 2s;
+  }
+  #gore{
+    animation-name: down;
+    animation-duration: 2s;
+  }
+  #levo{
+    animation-name: Levo;
+    animation-duration: 2s;
+  }
+  #desno{
+    animation-name: desno;
+    animation-duration: 2s;
+  }
+  #smanji{
+    animation-name: smanji;
+    animation-duration: 2s;
+  }
+  #ulazna{
+    animation-name: ulazna;
+    animation-duration: 3s;
+  }
+  #vrti{
+    animation-name: spin;
+    animation-duration: 2s;
+  }
+  #slika img{
+    width:50px;
+    height: 45px;
+    padding:0px 0px;
+  }
+  #slika {
+    width:50px;
+    height: 45px;
+    padding:0px 0px;
+  }
+  #black{
+    color: blue;
   }
 
   
  
 
-  @keyframes grow {
+ @keyframes grow {
     50%{transform:scale(1.5,1.5)}
 
+  }
+  @keyframes smanji {
+    from{transform: translatey(100%)}
+    50%{transform:scale(0.5,1)}
+   
+  
+  }
+  @keyframes ulazna {
+    20%{transform:scale(0.1,0.1)}
+    from{transform: translateY(200%)}
+    
+    
+  
+ 
+  }
+  @keyframes spin {
+    from{transform:scale(1,0.5)}
+  
+
+   
+   
+    
   }
   @keyframes Levo {
     from{transform: translateX(-100%)}
    }
-   @keyframes Right {
+   @keyframes desno {
     from{transform: translateX(100%)}
    }
    @keyframes up {
  from{transform: translatey(-100%)}
+
    }
    @keyframes down{
     from{transform: translatey(100%)}
